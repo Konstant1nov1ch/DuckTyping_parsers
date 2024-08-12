@@ -32,7 +32,7 @@ func main() {
 			for _, parser := range parsersList {
 				err := parser.Parse(path)
 				if err != nil {
-					fmt.Printf("Ошибка обработки файла %s через парсер %T: %v\n", path, parser, err)
+					//fmt.Printf("Ошибка обработки файла %s через парсер %T: %v\n", path, parser, err)
 				} else {
 					fmt.Printf("Файл %s успешно обработан через парсер %T\n", path, parser)
 					break // Выходим из цикла если файл успешно обработан
