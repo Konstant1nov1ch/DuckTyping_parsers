@@ -30,6 +30,7 @@ func main() {
 
 		if !info.IsDir() {
 			for _, parser := range parsersList {
+				//Тот самый Parse
 				err := parser.Parse(path)
 				if err != nil {
 					//fmt.Printf("Ошибка обработки файла %s через парсер %T: %v\n", path, parser, err)
